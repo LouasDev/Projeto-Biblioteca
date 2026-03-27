@@ -90,7 +90,7 @@ BibliotecaApp/
 
 ## Equipe
 
-- [ManoLouas](https://github.com/ManoLouas)
+- [LouasDev](https://github.com/LouasDev)
 - [Ithaloluzdepanela](https://github.com/Ithaloluzdepanela)
 - [Renato](https://github.com/renato0x)
 - [MatheusAlmeida10](https://github.com/MatheusAlmeida10)
