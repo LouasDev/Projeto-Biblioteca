@@ -1,0 +1,14 @@
+## Ignorar pastas de compilação
+bin/
+obj/
+
+## Ignorar arquivos do banco de dados na pasta Debug
+/bin/Debug/bibliotecaDB/
+
+## Ignorar arquivos de usuário do VS
+*.user
+*.suo
+
+## Ignorar todos os arquivos .sdf (exceto o original)
+*.sdf
+!bibliotecaDB/bibliotecaDB.sdf
