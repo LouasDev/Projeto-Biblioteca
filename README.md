@@ -1,6 +1,10 @@
 # Biblioteca Gastão Valle
 
-Sistema de gerenciamento de biblioteca desenvolvido como projeto acadêmico para a **Escola Estadual Professor Gastão Valle**.
+Sistema de gerenciamento de biblioteca desenvolvido para a **Escola Estadual Gastão Valle (Bocaiúva/MG)**.
+
+> **Nota sobre o repositório:** Este sistema foi desenvolvido para modernizar a gestão da biblioteca da **Escola Estadual Gastão Valle (Bocaiúva/MG)**. O projeto contou com o apoio e orientação do corpo docente, visando substituir registros manuais por uma solução digital eficiente.
+>
+> Este repositório é um *mirror/reupload* do projeto original para fins de portfólio pessoal, com o objetivo de demonstrar as minhas contribuições técnicas e facilitar a visualização do código.
 
 ## Sobre o Projeto
 
@@ -12,12 +16,35 @@ O **Biblioteca Gastão Valle** é um aplicativo desktop para controle de livros,
 - **Gerenciamento de usuários** — cadastrar alunos, professores e bibliotecários com CPF, turma, telefone e data de nascimento
 - **Leitura de código de barras** — suporte a leitores de código de barras para cadastro e empréstimo de livros
 - **Geração de etiquetas** — criação e impressão de etiquetas com código de barras para os livros
-- **Relatórios e exportação** — geração de relatórios com exportação para Excel (ClosedXML)
+- **Relatórios e exportação** — geração de relatórios com exportação para Excel
 - **Notificações** — alertas de disponibilidade de livros e lembretes de devolução
 - **Backup automático** — backup diário via Google Drive
 - **Modo offline** — funcionamento local mesmo sem conexão com a internet
 - **Modo escuro** — alternância entre tema claro e escuro
 - **Mapeamento de turmas** — organização e visualização de alunos por turma
+
+## Minhas Contribuições
+
+Neste projeto, atuei focado na camada de **Back-end**, sendo responsável por:
+
+- **Lógica de Negócios (C#)** — Implementação das regras de empréstimo, devolução e cálculo de prazos utilizando Programação Orientada a Objetos
+- **Persistência de Dados (SQL)** — Criação das queries para cadastro e controle de estoque de livros
+- **Interface (WinForms)** — Desenvolvimento de telas de livros, cadastro de livros, além da participação no design da tela de login
+
+## Tecnologias Utilizadas
+
+| Tecnologia | Descrição |
+|---|---|
+| **C# / .NET Framework 4.8** | Linguagem e framework principal |
+| **Windows Forms (WinForms)** | Interface gráfica desktop |
+| **SQL Server Compact Edition** | Banco de dados local |
+| **Google Drive API** | Backup automático na nuvem |
+| **iTextSharp / PDFsharp** | Geração de PDFs e etiquetas |
+| **ClosedXML** | Exportação de dados para Excel |
+| **ZXing.Net** | Leitura e geração de códigos de barras |
+| **Newtonsoft.Json** | Serialização JSON |
+| **MaterialSkin** | Componentes de interface moderna |
+| **Git** | Controle de versão |
 
 ## Credenciais Padrão
 
@@ -29,21 +56,6 @@ Na primeira execução, o banco de dados é criado automaticamente com um admini
 | Senha    | `admin`            |
 
 > **Recomendação:** altere a senha do administrador após o primeiro acesso.
-
-## Tecnologias Utilizadas
-
-| Tecnologia | Descrição |
-|---|---|
-| **.NET Framework 4.8** | Framework principal da aplicação |
-| **C# / WinForms** | Linguagem e interface gráfica |
-| **SQL Server Compact Edition (SQL CE)** | Banco de dados local |
-| **Google Drive API** | Backup automático na nuvem |
-| **iTextSharp / PDFsharp** | Geração de PDFs e etiquetas |
-| **ClosedXML** | Exportação de dados para Excel |
-| **ZXing.Net** | Leitura e geração de códigos de barras |
-| **Newtonsoft.Json** | Serialização JSON |
-| **MaterialSkin** | Componentes de interface moderna |
-| **MySql.Data** | Conexão com banco MySQL (remoto) |
 
 ## Pré-requisitos
 
@@ -73,7 +85,7 @@ Na primeira execução, o banco de dados é criado automaticamente com um admini
 
 ```
 BibliotecaApp/
-├── Elements/          # Componentes de UI customizados (botões, textboxes arredondados)
+├── Elements/          # Componentes de UI customizados
 ├── Forms/
 │   ├── Inicio/        # Tela inicial e formulário principal
 │   ├── Livros/        # Cadastro, empréstimo, devolução e busca de livros
@@ -97,6 +109,4 @@ BibliotecaApp/
 
 ---
 
-## Versão Beta
-
-> **Este software está em fase beta.** É um projeto acadêmico sujeito a bugs e melhorias. Funcionalidades podem ser adicionadas, alteradas ou removidas em versões futuras. Relate problemas e sugestões através das [Issues do GitHub](https://github.com/LouasDev/Projeto-Biblioteca/issues).
+> **Versão Beta:** Este software está em fase beta. É um projeto acadêmico sujeito a bugs e melhorias. Funcionalidades podem ser adicionadas, alteradas ou removidas em versões futuras.
